@@ -155,4 +155,4 @@ However since we are not working directly on our LOD Server, we need to access i
 
 Now that VOS is running and ready to go, we need to create some RDF to publish as Linked Open Data
 
-[previous](belling-the-cat-1) | [next](belling-the-cat-3)
+[previous](belling-the-cat-1.md) | [next](belling-the-cat-3.md)

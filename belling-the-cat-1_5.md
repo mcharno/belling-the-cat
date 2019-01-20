@@ -26,7 +26,7 @@ Once the virtual machine is started you can SSH into the server from your host (
 
 ```
 $ ssh pi@192.168.56.101
-pi@192.168.56.101's password: 
+pi@192.168.56.101's password:
 Welcome to Ubuntu 12.04.3 LTS (GNU/Linux 3.8.0-29-generic x86_64)
 
  * Documentation:  https://help.ubuntu.com/
@@ -41,7 +41,7 @@ Welcome to Ubuntu 12.04.3 LTS (GNU/Linux 3.8.0-29-generic x86_64)
   Graph this data and manage this system at https://landscape.canonical.com/
 
 Last login: Wed Nov  6 15:04:28 2013 from 192.168.56.1
-pi@ubuntu:~$ 
+pi@ubuntu:~$
 ```
 
 When the virtual machine is running you can also fire up the VOS Conductor interface at:
@@ -53,5 +53,4 @@ When the virtual machine is running you can also fire up the VOS Conductor inter
 Keep the VirtualBox virtual machine running in the background of your workstation for the rest of the tutorial. We'll be interacting with it both via the command line and web interface.
 
 
-[[next|belling-the-cat-2]]
-
+[next](belling-the-cat-2.md)

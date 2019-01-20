@@ -9,7 +9,7 @@ Upload RDF to VOS
 
 ```
 pi@ubuntu $ scp 5san30o3.rdf pi@192.168.56.101:~/
-pi@192.168.56.101's password: 
+pi@192.168.56.101's password:
 5san30o3.rdf                                          100%  184KB 183.9KB/s   00:00
 ```
 
@@ -22,7 +22,7 @@ Connected to OpenLink Virtuoso
 Driver: 06.01.3127 OpenLink Virtuoso ODBC Driver
 OpenLink Interactive SQL (Virtuoso), version 0.9849b.
 Type HELP; for help and EXIT; to exit.
-SQL> 
+SQL>
 ```
 
 + Load the RDF via the SQL terminal
@@ -42,7 +42,7 @@ SQL>
 + And you can run a SPARQL query to ensure that data actually exists in the Graph
 
 ```
-SELECT * 
+SELECT *
 WHERE {
     GRAPH <http://www.museum.org/data> {
         ?s ?p ?o
@@ -60,13 +60,13 @@ URL Rewriting
 + The following URL will render an HTML page:
 
 ```
-http://192.168.56.101:8890/sparql?query=construct%20%7B%3Chttp%3A%2F%2Fwww.museum.org%2Fdata%2FE22_BCB287%3E%20%3Fp%20%3Fo%7D%20where%20%7B%3Chttp%3A%2F%2Fwww.museum.org%2Fdata%2FE22_BCB287%3E%20%3Fp%20%3Fo%7D&format=text%2Fhtml	
+http://192.168.56.101:8890/sparql?query=construct%20%7B%3Chttp%3A%2F%2Fwww.museum.org%2Fdata%2FE22_BCB287%3E%20%3Fp%20%3Fo%7D%20where%20%7B%3Chttp%3A%2F%2Fwww.museum.org%2Fdata%2FE22_BCB287%3E%20%3Fp%20%3Fo%7D&format=text%2Fhtml
 ```
 
 + Which is effectively following the SPARQL query:
 
 ```
-CONSTRUCT {<http://www.museum.org/data/E22_BCB287> ?p ?o} 
+CONSTRUCT {<http://www.museum.org/data/E22_BCB287> ?p ?o}
 WHERE {<http://www.museum.org/data/E22_BCB287> ?p ?o}
 ```
 
@@ -132,7 +132,7 @@ Now we need to set up URL redirect rules to make VOS render the correct content.
 	+ *Request Path pattern* - __(/[^#]*)__
 	+ *Rule matching* - __Normal__
 	+ *SPARQL Query* - __CONSTRUCT {<http://www.museum.org$s1> ?p ?o} WHERE {<http://www.museum.org$s1> ?p ?o}__
-	+ *Destination Path format* - 
+	+ *Destination Path format* -
 
 ```
 /sparql?query=CONSTRUCT%20%7B%3Chttp%3A%2F%2Fwww.museum.org$s1%3E%20%3Fp%20%3Fo%7D%20%0D%0AWHERE%20%7B%3Chttp%3A%2F%2Fwww.museum.org$s1%3E%20%3Fp%20%3Fo%7D&format=html
@@ -154,4 +154,4 @@ $ curl -I -H "Accept:text/html" http://www.museum.org/data/E22_BCB287
 From here it'd be nice to have content negotiation to provide different serialisations of the data depending on the user-agent or the request parameters. VOS supports this, but there was not enough time to investigate this for the workshop. OpenLink documentation can be found [here](http://www.openlink.com).
 
 
-[[previous|belling-the-cat-3]] | [[next|belling-the-cat-5]]
+[previous](belling-the-cat-3.md) | [next](belling-the-cat-5.md)

@@ -15,18 +15,18 @@ To be able to successfully convert your data from tabular data to RDF, you need 
 |    |
 |----|
 |PRN
-|Label 
-|Period Culture 
-|Place 
-|Country 
-|Material 
-|Object Name 
+|Label
+|Period Culture
+|Place
+|Country
+|Material
+|Object Name
 |Description
 
 Know Your Tool
 --------------
 
-The tool we are going to use to convert the relational data is the [STELLAR.Web tool](http://reswin1.isd.glam.ac.uk/stellar/default.aspx) developed by Ceri Binding at the University of South Wales. If you have access to a Windows machine, you can also use the [STELLAR.Console tool](http://reswin1.isd.glam.ac.uk/stellar/tutorials/tutorial1.html), which allows you to use custom templates and offers more functionality compared to the STELLAR.Web tool. 
+The tool we are going to use to convert the relational data is the [STELLAR.Web tool](http://reswin1.isd.glam.ac.uk/stellar/default.aspx) developed by Ceri Binding at the University of South Wales. If you have access to a Windows machine, you can also use the [STELLAR.Console tool](http://reswin1.isd.glam.ac.uk/stellar/tutorials/tutorial1.html), which allows you to use custom templates and offers more functionality compared to the STELLAR.Web tool.
 
 The STELLAR tools convert relational data to RDF/XML by using interchangeable templates. These RDF/XML outputs also conform to the CIDOC-CRM. The templates used for the translation are important, since each template has been customised to represent a particular type of data. The template we will be looking at in this tutorial is a custom built one for the workshop, the __crm_objects__ template. There are more templates available, most of which relate to the CRM-EH extension and relate in particular to excavation data.
 
@@ -47,13 +47,13 @@ The following are the column header names the CRM Objects template will be expec
 |object_label|A short human-readable label for describing the object in user interfaces
 |object_title|A (definitive) descriptive title for the object
 |object_type_label|A string that identifies a particular type of object; e.g. pottery, statue, gem
-|object_type_uri|A URI that identifies a particular type of object 
+|object_type_uri|A URI that identifies a particular type of object
 |find_place_label|Description of place
 |find_place_uri|URI of place described elsewhere
 |production_period_label|A short human-readable label for describing the period in user interfaces
 |production_period_uri|A globally unique URI that identifies a particular period
 |production_material_label|Label for this material
-|production_material_uri|URI for this material 
+|production_material_uri|URI for this material
 
 ### BM Cheat Sheet ###
 
@@ -130,7 +130,7 @@ New file written to /Users/charno/Desktop/BellingTheCat/crm_objects-enhanced.csv
 
 ### Create RDF/XML ###
 
-With the new *enhanced* CSV file, we are now ready to use the STELLAR.Web tool to create RDF/XML. 
+With the new *enhanced* CSV file, we are now ready to use the STELLAR.Web tool to create RDF/XML.
 
 + Open up a web browser and navigate to the [STELLAR.Web](http://reswin1.isd.glam.ac.uk/stellar/default.aspx) tool
 + The STELLAR.Web tool requires 3 things:
@@ -181,4 +181,4 @@ $ ./welkin.sh
 
 Now we are ready to load our data into the triple store and make it accessible as Linked Open Data.
 
-[[previous|belling-the-cat-2]] | [[next|belling-the-cat-4]]
+[previous](belling-the-cat-2.md) | [next](belling-the-cat-4.md)
