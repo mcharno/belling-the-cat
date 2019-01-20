@@ -14,10 +14,9 @@ The course will provide an introduction to LOD and then will lead users through 
 This tutorial will guide you through the process of setting up a server, setting up a triple store, populating that triple store with your data, and publishing your data as LOD. This process will use a Raspberry Pi (RPi) as the server hardware, a Linux based operating system, and free and open source software for the triple store and application server. The tutorial assumes that you are using a RPi, but if the attendee does not have a physical RPi available to them, a VirtualBox virtual machine with a similar OS (Ubuntu) and similar specs can be used. The RPi is only used for the novelty of building a full LOD Server on a device like that. These instructions could be followed to build the same solution stack on different hardware as long as a Debian-based (Debian, Ubuntu, Mint) Linux OS is used.
 
 
-### [Start the Tutorial](belling-the-cat-1)
+### -> [Start the Tutorial](belling-the-cat-1)
 
-Quick Links
------------
+### Quick Links
 + [Setup your RPi](belling-the-cat-1)
 + [Setup your RPi-like Virtual Machine](belling-the-cat-1_5)
 + [Setup Virtuoso Open Source Server](belling-the-cat-2)
