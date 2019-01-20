@@ -92,7 +92,7 @@ Setting up virtuoso-vsp-startpage (6.1.4+dfsg1-7+rpi1) ...
 + Now modify the `virtuoso.ini` file to enable the rdf loader we'll use later to work
 
 ```
-pi@ubuntu:~$ sudo nano /etc/virtuoso-opensource-6.1/virtuoso.ini 
+pi@ubuntu:~$ sudo nano /etc/virtuoso-opensource-6.1/virtuoso.ini
 [sudo] password for pi:
 ```
 
@@ -127,7 +127,7 @@ ThreadCleanupInterval    = 0
 
 Locations
 ---------
-|           | 
+|           |
 |-----------|--------------
 |config file| `/etc/virtuoso-opensource-6.1/virtuoso.ini`
 |binary     | `/usr/bin/virtuoso-t`
@@ -135,7 +135,7 @@ Locations
 
 Commands
 --------
-|     | 
+|     |
 |-----|-----
 |start|`sudo /etc/init.d/virtuoso-opensource-6.1 start`
 |stop|`/etc/init.d/virtuoso-opensource-6.1 stop`
@@ -155,5 +155,4 @@ However since we are not working directly on our LOD Server, we need to access i
 
 Now that VOS is running and ready to go, we need to create some RDF to publish as Linked Open Data
 
-[[previous|belling-the-cat-1]] | [[next|belling-the-cat-3]]
-
+[previous](belling-the-cat-1) | [next](belling-the-cat-3)

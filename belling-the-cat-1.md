@@ -1,9 +1,9 @@
 Set up RPi
 ==========
 
-Assuming you are using a RPi, the following instructions will guide you through the process of installing and configuring your machine. If you are using the VirtualBox virtual machine, go to [[section 1.5.|belling-the-cat-1_5]]
+Assuming you are using a RPi, the following instructions will guide you through the process of installing and configuring your machine. If you are using the VirtualBox virtual machine, go to [section 1.5.](belling-the-cat-1_5.md)
 
-+ Download the Raspbian image from [[http://www.raspberrypi.org/downloads]]
++ Download the Raspbian image from [](http://www.raspberrypi.org/downloads)
   + If your less comfortable with the command line you can download the NOOBS package which will set up the install via a GUI
 + Unpack the ZIP file onto your computer
 + Open up a terminal and identify the SD Card
@@ -51,7 +51,7 @@ With a freshly installed instance of Raspbian, we can start to configure the OS 
 
 ### General ###
 
-+ Upon successful boot, you should be presented with the "Rasberry Pi Software Configuration Tool (raspi-config)" 
++ Upon successful boot, you should be presented with the "Rasberry Pi Software Configuration Tool (raspi-config)"
 + Navigation can be done with the arrow and tab keys, and Enter/Return can be used to select an option
   + Select option 1, *Expand Filesystem*
   + Change the default user password if desired, but write down the new password somewhere safe
@@ -117,7 +117,7 @@ eth0      Link encap:Ethernet  HWaddr b8:27:eb:8a:14:65
           UP BROADCAST MULTICAST  MTU:1500  Metric:1
           RX packets:0 errors:0 dropped:0 overruns:0 frame:0
           TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
-          collisions:0 txqueuelen:1000 
+          collisions:0 txqueuelen:1000
           RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
 
 lo        Link encap:Local Loopback  
@@ -125,7 +125,7 @@ lo        Link encap:Local Loopback
           UP LOOPBACK RUNNING  MTU:16436  Metric:1
           RX packets:8 errors:0 dropped:0 overruns:0 frame:0
           TX packets:8 errors:0 dropped:0 overruns:0 carrier:0
-          collisions:0 txqueuelen:0 
+          collisions:0 txqueuelen:0
           RX bytes:1104 (1.0 KiB)  TX bytes:1104 (1.0 KiB)
 
 wlan0     Link encap:Ethernet  HWaddr 80:1f:02:af:45:15  
@@ -133,7 +133,7 @@ wlan0     Link encap:Ethernet  HWaddr 80:1f:02:af:45:15
           UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
           RX packets:285 errors:0 dropped:308 overruns:0 frame:0
           TX packets:150 errors:0 dropped:0 overruns:0 carrier:0
-          collisions:0 txqueuelen:1000 
+          collisions:0 txqueuelen:1000
           RX bytes:40740 (39.7 KiB)  TX bytes:22390 (21.8 KiB)
 ```
 
@@ -159,7 +159,7 @@ $ ssh pi@192.168.1.116
 
 ```
 $ ssh pi@192.168.1.116
-pi@192.168.1.116's password: 
+pi@192.168.1.116's password:
 Linux raspberrypi 3.6.11+ #538 PREEMPT Fri Aug 30 20:42:08 BST 2013 armv6l
 
 The programs included with the Debian GNU/Linux system are free software;
