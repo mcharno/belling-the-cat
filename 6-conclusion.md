@@ -5,4 +5,4 @@ Now you have a partially set up LOD Server running on either a RPi or an underpo
 
 The original ADS LOD set up used a combination of AllegroGraph and Pubby. This kind of configuration can be investigated as well for people interested in a similar solution.
 
-+ [AllegroGraph & Pubby](allegrograph-pubby.md)
++ [AllegroGraph & Pubby](appendix-allegrograph-pubby.md)

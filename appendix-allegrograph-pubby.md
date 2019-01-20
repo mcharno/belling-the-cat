@@ -54,7 +54,7 @@ ProxyPassReverse /sparql/ http://localhost:10035/
 
 ### Pubby ###
 
-Pubby is the interface between a request and the triple store. When a web browser requests an entity, Pubby will return an HTML representation of the data. When a machine (ie. SPARQL client) makes a request, Pubby will return an XML representation of the data. This is known as content negotiation. 
+Pubby is the interface between a request and the triple store. When a web browser requests an entity, Pubby will return an HTML representation of the data. When a machine (ie. SPARQL client) makes a request, Pubby will return an XML representation of the data. This is known as content negotiation.
 
 ### Connecting Pubby to AllegroGraph ###
 

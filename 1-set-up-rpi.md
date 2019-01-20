@@ -1,7 +1,7 @@
 Set up RPi
 ==========
 
-Assuming you are using a RPi, the following instructions will guide you through the process of installing and configuring your machine. If you are using the VirtualBox virtual machine, go to [section 1.5.](belling-the-cat-1_5.md)
+Assuming you are using a RPi, the following instructions will guide you through the process of installing and configuring your machine. If you are using the VirtualBox virtual machine, go to [section 2.](2-set-up-virtual-box.md)
 
 + Download the Raspbian image from [](http://www.raspberrypi.org/downloads)
   + If your less comfortable with the command line you can download the NOOBS package which will set up the install via a GUI
@@ -235,4 +235,4 @@ Processing triggers for menu ...
 Processing triggers for initramfs-tools ...
 ```
 
-[previous](README.md) | [next](belling-the-cat-2.md)
+[previous](README.md) | [next](3-set-up-virtuoso.md)

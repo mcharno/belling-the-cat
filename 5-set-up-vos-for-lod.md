@@ -37,7 +37,7 @@ SQL>
 
 + Check for the data in VOS Conductor
 
-![A list of the Graphs in VOS](resources/images/vos-graphs.png "A list of the Graphs in VOS")
+![A list of the Graphs in VOS](images/vos-graphs.png "A list of the Graphs in VOS")
 
 + And you can run a SPARQL query to ensure that data actually exists in the Graph
 
@@ -51,7 +51,7 @@ WHERE {
 LIMIT 100
 ```
 
-![Selecting 100 enteries of the RDF data we just loaded](resources/images/vos-sparql.png "Selecting 100 enteries of the RDF data we just loaded")
+![Selecting 100 enteries of the RDF data we just loaded](images/vos-sparql.png "Selecting 100 enteries of the RDF data we just loaded")
 
 + You can also explicitly define the Graph IRI in the field above the SPARQL text area and simplify the SPARQL query
 
@@ -103,22 +103,22 @@ fe80::1%lo0     localhost
 	+ Enter __0.0.0.0__ in *Interface*, __80__ in *Port* and __www.museum.org__ in *HTTP Host* and click *Add*
 + Now we need to create a SPARQL directory, so click on *New Directory*
 
-![](resources/images/vos-newdir.png)
+![](images/vos-newdir.png)
 
 + Set the new directory *Type* to SPARQL access point
 
-![](resources/images/vos-dir.png)
+![](images/vos-dir.png)
 
 + The settings for the directory will be automatically set except for the *Path*, which we need to set to __/sparql__
 
-![](resources/images/vos-dirsettings.png)
+![](images/vos-dirsettings.png)
 
 From here the instructions are designed to set up a similar system to the ADS AllegroGraph/Pubby offering. VOS is extermely configurable, so the following settings can be customised according to your preferences or your networks limitations.
 
 + Now we need to set up the HTML representation of our Linked Open Data, so start by creating another new virtual directory
 + This time create a __File system__ *Type* virtual directory
 
-![](resources/images/vos-dirdata.png)
+![](images/vos-dirdata.png)
 
 + Set the *Path* to __/data__ and save your changes
 
@@ -126,7 +126,7 @@ Now we need to set up URL redirect rules to make VOS render the correct content.
 
 + Click on the *URL-rewrite* link for the data virtual directory
 
-![](resources/images/vos-rewrite.png)
+![](images/vos-rewrite.png)
 
 + Change the settings as follows
 	+ *Request Path pattern* - __(/[^#]*)__
@@ -154,4 +154,4 @@ $ curl -I -H "Accept:text/html" http://www.museum.org/data/E22_BCB287
 From here it'd be nice to have content negotiation to provide different serialisations of the data depending on the user-agent or the request parameters. VOS supports this, but there was not enough time to investigate this for the workshop. OpenLink documentation can be found [here](http://www.openlink.com).
 
 
-[previous](belling-the-cat-3.md) | [next](belling-the-cat-5.md)
+[previous](4-create-rdf.md) | [next](6-conclusion.md)

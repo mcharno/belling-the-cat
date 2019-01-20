@@ -84,7 +84,7 @@ Setting up virtuoso-vsp-startpage (6.1.4+dfsg1-7+rpi1) ...
 
 + As part of the installation, Debian will ask you for passwords to use for the dba and dav users; if you leave it blank, the virtuoso service will not start after installation
 
-![VOS install screenshot](resources/images/vos-install.png "VOS install screenshot")
+![VOS install screenshot](images/vos-install.png "VOS install screenshot")
 
 + If the installation fails, the dba and dav users passwords may not be updated. If so default passwords will be used (dba/dba and dav/dav)
 + After the install, the `virtuoso-t` command should have started automatically, but if not, you can start and stop VOS with the commands below
@@ -151,8 +151,8 @@ VOS has a web interface for managing the server. This lives locally at:
 
 However since we are not working directly on our LOD Server, we need to access it from our laptops via the IP address. Replace `localhost` with the IP address of your LOD Server to log into the VOS web admin.
 
-![VOS Conductor landing page](resources/images/vos-conductor.png "VOS Conductor landing page")
+![VOS Conductor landing page](images/vos-conductor.png "VOS Conductor landing page")
 
 Now that VOS is running and ready to go, we need to create some RDF to publish as Linked Open Data
 
-[previous](belling-the-cat-1.md) | [next](belling-the-cat-3.md)
+[previous](1-set-up-rpi.md) | [next](4-create-rdf.md)

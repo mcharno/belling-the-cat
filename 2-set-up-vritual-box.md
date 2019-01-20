@@ -8,7 +8,7 @@ To begin with, we need to add a Host-only Network to the VirtualBox application.
 + Open up VirtualBox and go to *File* -> *Preferences* -> *Network*
 + Add a Network by clicking on the icon with the NIC and '+'
 
-![VirtualBox host network settings](resources/images/vb-network.png "Network settings")
+![VirtualBox host network settings](images/vb-network.png "Network settings")
 
 Setting up your VirtualBox host on a Host-only network will not allow you to connect to the outside world, so you won't be able to apt-get new packages. If you need access to the internet, change your VirtualBox guest machine settings to NAT and restart your LOD Server VM. The {{LOD_Server.ova}} image, mentioned below, has an up-to-date version of Ubuntu Server and the Virtuoso Open Source software installed.
 
@@ -17,7 +17,7 @@ Setting up your VirtualBox host on a Host-only network will not allow you to con
 	+ Make sure the USB2.0 for the guest is also disabled, unless you have Oracle VM VirtualBox Extension Pack for the host
 + Start the {{LOD Server}} VM
 
-![VirtualBox menu with LOD Server imported](resources/images/vb-menu.png "Virtual Box menu")
+![VirtualBox menu with LOD Server imported](images/vb-menu.png "Virtual Box menu")
 
 Once the virtual machine is started you can SSH into the server from your host (laptop). The default ip of the guest is {{192.168.56.101,}} so use that ip for SSH as well as connecting to the VOS Conductor interface.
 
@@ -53,4 +53,4 @@ When the virtual machine is running you can also fire up the VOS Conductor inter
 Keep the VirtualBox virtual machine running in the background of your workstation for the rest of the tutorial. We'll be interacting with it both via the command line and web interface.
 
 
-[next](belling-the-cat-2.md)
+[next](3-set-up-virtuoso.md)

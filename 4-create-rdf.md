@@ -138,13 +138,13 @@ With the new *enhanced* CSV file, we are now ready to use the STELLAR.Web tool t
 	+ Template
 	+ Namespace Prefix: This will be the URL root that all local resources will live (ie. object ids)
 
-![The STELLAR.Web tool with populated fields](resources/images/stellar_web.png "The STELLAR.Web tool with populated fields")
+![The STELLAR.Web tool with populated fields](images/stellar_web.png "The STELLAR.Web tool with populated fields")
 
 + Download the created file (the link is underneath the Submit button)
 + You can open the file and look at it, but it should be dense XML so its not recomended
 	+ If you want to see what your data looks like, you can open it in a special semantic browser, such as [SemanticWorks](http://www.w3.org/2001/sw/wiki/SemanticWorks), [Gruff](http://www.franz.com/agraph/gruff/), [RDF-Gravity](http://semweb.salzburgresearch.at/apps/rdf-gravity/index.html), or [Simile Welkin](http://simile.mit.edu/welkin/).
 
-![The BM data visualised in Welkin](resources/images/rdf-visualisation.png "The BM data visualised in Welkin")
+![The BM data visualised in Welkin](images/rdf-visualisation.png "The BM data visualised in Welkin")
 
 ### Simile Welkin ###
 
@@ -175,10 +175,10 @@ $ source ~/.bash_profile
 $ ./welkin.sh
 ```
 
-![The Simile Welkin application](resources/images/rdf-welkin.png "The Simile Welkin application")
+![The Simile Welkin application](images/rdf-welkin.png "The Simile Welkin application")
 
 + Load the RDF data and have a play
 
 Now we are ready to load our data into the triple store and make it accessible as Linked Open Data.
 
-[previous](belling-the-cat-2.md) | [next](belling-the-cat-4.md)
+[previous](3-set-up-virtuoso.md) | [next](5-set-up-vos-for-lod.md)
