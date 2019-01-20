@@ -11,5 +11,5 @@ Cultural Heritage Informatics specialists are often heard to say “just publish
 
 The course will provide an introduction to LOD and then will lead users through a cookbook of simple to follow techniques for creating and publishing it. All software used in the workshop will be freeware and runs on the free and open source operating system Linux. The software and operating system are uniquely capable of running on underpowered hardware, making deploying it simple even with limited support from an IT department or support services. The full set of software and guidelines will be available to attendees (if you bring a USB stick)
 
-[[Tutorial Info|belling-the-cat-0]]
-[[Start the Tutorial|belling-the-cat-1]]
+* [Tutorial Info](belling-the-cat-0)
+* [Start the Tutorial](belling-the-cat-1)
