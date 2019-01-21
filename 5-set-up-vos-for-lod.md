@@ -72,7 +72,7 @@ WHERE {<http://www.museum.org/data/E22_BCB287> ?p ?o}
 
 That's all fine and dandy as a proof of concept, but real Linked Open Data resolves to a proper URI in the domain we declared in our RDF. Accomplishing that will be dependent on your own network settings, however, we can set up your local machine to pretend...
 
-+ Update the {{/etc/hosts}} file on your workstation to forward all network traffic to our imaginary domain to the LOD Server
++ Update the `/etc/hosts` file on your workstation to forward all network traffic to our imaginary domain to the LOD Server
 
 ```
 pi@ubuntu$ sudo nano /etc/hosts

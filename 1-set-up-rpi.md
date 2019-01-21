@@ -109,7 +109,7 @@ network={
 ```
 
 + Reboot your RPi to accept new network settings
-+ Check that your RPi has an IP address by running {{ifconfig}}
++ Check that your RPi has an IP address by running `ifconfig`
 
 ```
 pi@raspberrypi ~ $ ifconfig
@@ -148,14 +148,14 @@ ssh
 ---
 
 + Now with your RPi connected to a network, you can start managing it via SSH from another computer.
-  + Identify the IP address, either via {{ifconfig}} on your RPi or by checking in the router interface
-  + From a computer on the same network, {{ssh}} into your RPi
+  + Identify the IP address, either via `ifconfig` on your RPi or by checking in the router interface
+  + From a computer on the same network, `ssh` into your RPi
 
 ```
 $ ssh pi@192.168.1.116
 ```
 
-+ Enter your password, which you should have written down. If you haven't changed it the default password is {{raspberry}}
++ Enter your password, which you should have written down. If you haven't changed it the default password is `raspberry`
 
 ```
 $ ssh pi@192.168.1.116
@@ -175,7 +175,7 @@ pi@raspberrypi ~ $
 Updates
 -------
 
-+ Update the package definitions on your RPi to the latest versions with the {{sudo apt-get update}} command
++ Update the package definitions on your RPi to the latest versions with the `sudo apt-get update` command
 
 ```
 pi@raspberrypi ~ $ sudo apt-get update
@@ -207,7 +207,7 @@ Fetched 7,519 kB in 49s (151 kB/s)
 Reading package lists... Done
 ```
 
-+ Then upgrade the actual packages with the {{sudo apt-get upgrade}} command
++ Then upgrade the actual packages with the `sudo apt-get upgrade` command
 
 ```
 pi@raspberrypi ~ $ sudo apt-get upgrade

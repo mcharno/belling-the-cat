@@ -10,33 +10,31 @@ Download and follow the installation instructions on the [AllegroGraph website](
 
 ### Settings ###
 
-|           |
-|-----------|-------------
-|Config File|`[AG_HOME]/ag44/lib/agraph.cfg`
-|Data Directory|`[AG_HOME]/ag44/data`
-|Log Files|`[AG_HOME]/ag44/log`
+|Config File|`[AG_HOME]/ag44/lib/agraph.cfg`|
+|Data Directory|`[AG_HOME]/ag44/data`|
+|Log Files|`[AG_HOME]/ag44/log`|
 
 ### Starting ###
 
 ```
-[[AG_HOME]/ag44/bin/agraph-control --config /home/adssys/ag44/lib/agraph.cfg start
+[AG_HOME]/ag44/bin/agraph-control --config /home/adssys/ag44/lib/agraph.cfg start
 ```
 
 ### Stopping ###
 
 ```
-[[AG_HOME]/ag44/bin/agraph-control --config /home/adssys/ag44/lib/agraph.cfg stop
+[AG_HOME]/ag44/bin/agraph-control --config /home/adssys/ag44/lib/agraph.cfg stop
 ```
 
 ### AG Web View ###
 
 This is the web interface for managing the triple store and repositories. All management commands of the triple store, including creating and deleting repositories, adding and removing triples, as well as user management, etc can be done via this interface.
 
-+ __Location__: `http://[[SERVER]:10035/`
++ __Location__: `http://[SERVER]:10035/`
 
 ### SPARQL endpoint ###
 
-This is located at root of AG Web View appended with the path to the repository.  For an imaginary `ADSTest` repository, the SPARQL endpoint would be `http://[[SERVER]:10035/repositories/ADSTest`. This is not available outside of your network unless you open the AllegroGraph port through your firewall.
+This is located at root of AG Web View appended with the path to the repository.  For an imaginary `ADSTest` repository, the SPARQL endpoint would be `http://[SERVER]:10035/repositories/ADSTest`. This is not available outside of your network unless you open the AllegroGraph port through your firewall.
 
 ### `data` Sub Domain ###
 
@@ -67,12 +65,12 @@ conf:webBase <http://data.archaeologydataservice.ac.uk/>;
 conf:indexResource <http://data.archaeologydataservice.ac.uk>;
 
 #Dataset 1
-conf:sparqlEndpoint <http://[[SERVER]/repositories/ADS>;
+conf:sparqlEndpoint <http://[SERVER]/repositories/ADS>;
 conf:datasetBase <http://data.archaeologydataservice.ac.uk/>;
 conf:webResourcePrefix "";
 
 #Dataset 2
-conf:sparqlEndpoint <http://[[SERVER]/repositories/ADS>;
+conf:sparqlEndpoint <http://[SERVER]/repositories/ADS>;
 conf:datasetBase <http://data.archaeologydataservice.ac.uk/>;
 conf:datasetURIPattern "(class|property)/.*";
 ```

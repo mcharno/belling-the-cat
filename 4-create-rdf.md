@@ -3,7 +3,7 @@ Create RDF from Relational Data
 
 If you brought data with you this is were we can go through the process of creating RDF with the [STELLAR tools](http://hypermedia.research.southwales.ac.uk/resources/STELLAR-applications/). This process will be different for everyone, but a general workflow will be described to support atendees in the process. A sample dataset will be used as an exemplar for this workflow, which will hopefully closely resemble your own data.
 
-If you already have RDF ready to be imported into VOS, go on to the [[next|belling-the-cat-4]] section.
+If you already have RDF ready to be imported into VOS, go on to the [next](5-set-up-vos-for-lod.md) section.
 
 Know Your Data
 --------------
@@ -12,16 +12,14 @@ To be able to successfully convert your data from tabular data to RDF, you need 
 
 ### BM Cheat Sheet ###
 
-|    |
-|----|
-|PRN
-|Label
-|Period Culture
-|Place
-|Country
-|Material
-|Object Name
-|Description
+|PRN|
+|Label|
+|Period Culture|
+|Place|
+|Country|
+|Material|
+|Object Name|
+|Description|
 
 Know Your Tool
 --------------
@@ -41,31 +39,27 @@ The templates work by parsing a CSV file, identifying specific column headers, a
 
 The following are the column header names the CRM Objects template will be expecting, so change the relevant column headers to one of the following:
 
-|         |
-|---------|-----------
-|object_id|[Mandatory] A string value that serves to uniquely identify the object within its source dataset
-|object_label|A short human-readable label for describing the object in user interfaces
-|object_title|A (definitive) descriptive title for the object
-|object_type_label|A string that identifies a particular type of object; e.g. pottery, statue, gem
-|object_type_uri|A URI that identifies a particular type of object
-|find_place_label|Description of place
-|find_place_uri|URI of place described elsewhere
-|production_period_label|A short human-readable label for describing the period in user interfaces
-|production_period_uri|A globally unique URI that identifies a particular period
-|production_material_label|Label for this material
-|production_material_uri|URI for this material
+|object_id|[Mandatory] A string value that serves to uniquely identify the object within its source dataset|
+|object_label|A short human-readable label for describing the object in user interfaces|
+|object_title|A (definitive) descriptive title for the object|
+|object_type_label|A string that identifies a particular type of object; e.g. pottery, statue, gem|
+|object_type_uri|A URI that identifies a particular type of object|
+|find_place_label|Description of place|
+|find_place_uri|URI of place described elsewhere|
+|production_period_label|A short human-readable label for describing the period in user interfaces|
+|production_period_uri|A globally unique URI that identifies a particular period|
+|production_material_label|Label for this material|
+|production_material_uri|URI for this material|
 
 ### BM Cheat Sheet ###
 
-|         |
-|---------|-----------
-|object_id|PRN
-|object_label|Description
-|object_title|Label
-|object_type_label|Object Name
-|find_place_label|Place
-|production_period_label|Period Culture
-|production_material_label|Material
+|object_id|PRN|
+|object_label|Description|
+|object_title|Label|
+|object_type_label|Object Name|
+|find_place_label|Place|
+|production_period_label|Period Culture|
+|production_material_label|Material|
 
 LinkedDataToolkit
 -----------------
