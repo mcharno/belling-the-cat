@@ -128,6 +128,8 @@ ThreadCleanupInterval    = 0
 Locations
 ---------
 
+|Resource |Path |
+|------ |------ |
 |config file| `/etc/virtuoso-opensource-6.1/virtuoso.ini`|
 |binary     | `/usr/bin/virtuoso-t`|
 |logs       | `/var/lib/virtuoso-opensource-6.1/db/virtuoso.log`|
@@ -135,6 +137,8 @@ Locations
 Commands
 --------
 
+|Action |Command |
+|------ |------ |
 |start|`sudo /etc/init.d/virtuoso-opensource-6.1 start`|
 |stop|`/etc/init.d/virtuoso-opensource-6.1 stop`|
 |restart|`/etc/init.d/virtuoso-opensource-6.1 restart`|

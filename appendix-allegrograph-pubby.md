@@ -10,6 +10,8 @@ Download and follow the installation instructions on the [AllegroGraph website](
 
 ### Settings ###
 
+|Resource |Path |
+|------ |------ |
 |Config File|`[AG_HOME]/ag44/lib/agraph.cfg`|
 |Data Directory|`[AG_HOME]/ag44/data`|
 |Log Files|`[AG_HOME]/ag44/log`|

@@ -12,6 +12,8 @@ To be able to successfully convert your data from tabular data to RDF, you need 
 
 ### BM Cheat Sheet ###
 
+|Concept|
+|------ |
 |PRN|
 |Label|
 |Period Culture|
